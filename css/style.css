@@ -1,0 +1,99 @@
+/* 
+Project Name: Kitten Ipsum
+Client: General Assembly
+Author: Max Nanzig
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right; 
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left; 
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+.btn {
+}
+
+
+h1 {
+
+}
+
+h1 a {
+
+}
+
+nav {
+
+}
+
+nav ul {
+
+}
+
+nav li {
+
+}
+
+nav a {
+
+}
+
+nav a:hover {
+
+
+}
+
+nav span {
+
+}
+
+nav li:last-of-type span{
+
+}
+
+p {
+
+}
