@@ -40,17 +40,48 @@ Author: Max Nanzig
 /* BASE STYLES                   
 /*******************************************/
 
-body {
 
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 h1 {
   font-size: 76px;
-
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #F5E8DC;
 }
 
 h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 26px;
+}
 
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 15px 0;
 }
 
 
@@ -60,29 +91,174 @@ h2 {
 /* LAYOUT                   
 /*******************************************/
 
+.title {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
 
-div.hero {
+.options {
+  background-color: #F5E8DC;
+  padding: 35px 120px;
+}
+
+.site {
+  max-width: 100%;
+}
+
+.hero {
     background-image: url(../images/kitten.jpg);
     background-position: center;
-    height: 900px;
-    width: 100%;
+    height: 980px;
+    width: 40%;
     max-width: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    float: left;
   }
 
-  
+.body {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: white;
+}
+
+.content {
+  border-color: black;
+  border-width: 1px;
+  display: block;
+  width: 60%;
+  float: left;
+}
+
+.output {
+  padding: 65px 120px;
+}
 
 
-/******************************************
-/* ADDITIONAL STYLES                   
-/*******************************************/
+
+/*---------DROPDOWN-----------*/
 
 
 
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px 110px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 110px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #383838;
+}
 
 
+
+/*---------CHECKBOXES-----------*/
+
+
+
+/* The container */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #383838;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 
 
