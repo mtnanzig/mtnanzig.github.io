@@ -1,71 +1,26 @@
 
-var imagesArray = ["image_1.jpg", "image_2.jpg", "image_3.jpg", "image_4.jpg", "image_5.jpg", "image_6.jpg"];
 
-var minimum = 0;
-var maximum = imagesArray.length - 1;  // this allows an unlimited number of images
-var currentPosition = 0;
-var likesArray = [0, 0, 0, 0, 0, 0];
+$("#headline-check").on("click", function () {
+	$("#headline").show();
+})
 
 
-// IMAGES ---------------------------- //
-// ------- NEXT ---------------------- //
-
-$("#next").on("click", function () {
-	currentPosition += 1; // currentPostion = currentPostion + 1
-	$("#prev").attr("disabled", false);
-	if(currentPosition >= maximum) {
-		$(this).attr("disabled", true);
-	}
-	$("#image-to-vote-on").attr("src", "images/" + imagesArray[currentPosition]);
-	$("#votes").html("Likes: " + likesArray[currentPosition]);
-
-	console.log("click");
-});
-
-// ------- PREV ----------------------- //
-
-$("#prev").on("click", function () {
-	currentPosition -= 1; // currentPostion = currentPostion + 1
-	$("#next").attr("disabled", false);	
-	if(currentPosition == minimum) {
-		$(this).attr("disabled", true);
-	}
-	$("#image-to-vote-on").attr("src", "images/" + imagesArray[currentPosition]);
-	$("#votes").html("Likes: " + likesArray[currentPosition]);
-
-	console.log("click");
-});
+$("#subhead-check").on("click", function () {
+	$("#subhead").show();
+})
 
 
-// FINGERS ----------------------------- //
-// ------- UP ---------------------- //
+$("#paragraph1-btn").on("click", function () {
+	$("#paragraph1").show();
+})
 
-$("#upvote").on("click", function() {
-	likesArray[currentPosition] += 1;
-	$("#votes").html("Likes: " + likesArray[currentPosition]);
+$("#paragraph2-btn").on("click", function () {
+	$("#paragraph1").show();
+	$("#paragraph2").show();
+})
 
-
-
-	console.log(likesArray);
-});
-
-// ------- DOWN ---------------------- //
-
-$("#downvote").on("click", function() {
-	likesArray[currentPosition] -= 1;
-	$("#votes").html("Likes: " + likesArray[currentPosition]);
-
-
-	console.log(likesArray);
-});
-
-
-
-
-
-
-
-
-
-
-
+$("#paragraph3-btn").on("click", function () {
+	$("#paragraph1").show();
+	$("#paragraph2").show();
+	$("#paragraph3").show();
+})
